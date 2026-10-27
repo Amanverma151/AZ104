@@ -2,7 +2,7 @@
 
 Learn the Microsoft Azure Administrator (AZ-104) exam through short animated lessons, then prove it with exam-style questions.
 
-**Live demo:** https://<your-username>.github.io/az104-motion-coach/
+**Live demo:** https://amanverma151.github.io/AZ104/
 
 ## What's inside
 
