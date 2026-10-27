@@ -42,7 +42,7 @@ nav.tabs button{border:0;background:none;padding:7px 12px;border-radius:8px;font
 nav.tabs button:hover{background:var(--surface2);color:var(--ink)}
 nav.tabs button[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
 .badge{font:600 11px var(--f-mono);background:var(--signal);color:#1a1205;border-radius:99px;padding:1px 7px}
-main{padding-block:24px 64px}
+main{padding-block:24px 48px}
 h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
 h1{font-size:clamp(26px,4vw,38px);font-weight:750;font-stretch:108%;line-height:1.08;letter-spacing:-.01em}
 h2{font-size:20px;font-weight:700;font-stretch:105%}
@@ -255,6 +255,9 @@ pre.code{font:13px/1.5 var(--f-mono);background:var(--surface2);padding:12px 14p
 @media (prefers-reduced-motion:reduce){.flash .card{transition:none}}
 .center{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
 .empty{padding:28px;text-align:center;color:var(--muted)}
+footer.site{border-top:1px solid var(--line);background:var(--surface);font-size:13.5px}
+footer.site .wrap{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-block:18px}
+footer.site .sep{color:var(--muted)}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:9px;font-size:14px;z-index:20;max-width:calc(100% - 32px)}
 .spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:sp 0.8s linear infinite}
 @keyframes sp{to{transform:rotate(360deg)}}
@@ -285,6 +288,7 @@ pre.code{font:13px/1.5 var(--f-mono);background:var(--surface2);padding:12px 14p
  </nav>
 </div></header>
 <main class="wrap" id="main"></main>
+<footer class="site"><div class="wrap"><span>Built by <b>Aman Verma</b></span><span class="sep">·</span><a href="https://github.com/Amanverma151/AZ104" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><span class="muted">Not affiliated with Microsoft</span></div></footer>
 <script>
 (function(){
 /* ===== Content: helpers ===== */
