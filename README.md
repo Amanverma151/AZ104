@@ -7,11 +7,13 @@ Learn the Microsoft Azure Administrator (AZ-104) exam through short animated les
 ## What's inside
 
 - **58 animated lessons** across all five exam domains, with captions you can pause, step through and replay
-- **~280 original exam-style questions**: single answer, select two, hotspot, drag-to-order, Yes/No series and case studies, each with explanations of why every wrong option is wrong
+- **~380 exam-style questions**: ~280 written for the lessons plus a separate **100-question scenario practice exam**: single answer, select two, hotspot, drag-to-order, Yes/No series and case studies, with full explanations
 - **Quick checks** after every lesson and a 10–15 question **session quiz**
 - **Spaced repetition**: missed questions come back after 10 minutes, then 1, 3, 7, 16 and 35 days
 - **~145 exam-trap flashcards**
 - **Timed mock exams**: one per domain (25 questions, 40 min) and a full mock (50 questions, 100 min)
+- **Signal phrases**: practice-exam questions highlight the words that point to the answer once you've answered
+- **Pattern cheat sheet**: 100 "when you see… the answer is usually…" rules by domain, constraint phrases and a classic-traps checklist, searchable, with one-click practice per domain
 - **Readiness score** weighted like the real exam
 
 | Domain | Weight | Lessons |
@@ -42,7 +44,12 @@ src/
   content*.js     # lessons, questions and flashcards per domain
   questions.js    # networking questions and flashcards
   engine.js       # SVG animation engine and scene player
+  practice.js     # 100-question practice exam + cheat sheet data
+  cheat.js        # cheat sheet page
   app.js          # views, quizzes, spaced repetition, mocks
+docs/
+  az104-cheat-sheet.md        # the cheat sheet as plain Markdown
+  az104-practice-questions.md # the 100 practice questions with answers
 ```
 
 Edit files in `src/`, then run `python build.py` to regenerate `index.html`.
